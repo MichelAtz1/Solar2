@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="#CCC"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.desenvolvedor.michelatz.aplcativosolar.Proposta3"
+    tools:showIn="@layout/app_bar_proposta3">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/titulo3"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:layout_marginTop="25dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="5dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:shrinkColumns="*"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtKWH"
+                                android:layout_span="2"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edtKWH"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_span="2"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtValor"
+                                android:layout_marginLeft="10dp"
+                                android:layout_span="2"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edtValor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_span="2"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/txtAreaTelhadoDisponivel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Área de telhado disponível (m²):"
+                                android:layout_marginLeft="10dp"
+                                android:layout_span="2"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edtAreaTelhadoDisponivel"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_span="2"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+
+<!--
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/txtRepresentante"
+                                android:layout_marginLeft="10dp"
+                                android:layout_span="2"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:id="@+id/grupRepresentante"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_span="2"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioNao"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:checked="true"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="@string/radioNao"
+                                    android:textSize="17sp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioSim"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:text="@string/radioSim"
+                                    android:textSize="17sp" />
+
+                            </RadioGroup>
+                        </TableRow>
+-->
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tipo de Telhado:"
+                                android:layout_marginLeft="10dp"
+                                android:layout_span="2"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <Spinner
+                                android:id="@+id/spnTipoTelhado"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_span="2"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="@drawable/botao" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Sombreamento:"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <TableLayout
+                            android:id="@+id/tableBA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_gravity="center"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="*">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioGroup
+                                    android:id="@+id/grupSombriamento"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/radioSombriamentoNenhum"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:checked="true"
+                                        android:text="Nenhum"
+                                        android:textSize="13sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioSombriamentoPouco"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:text="Pouco (3%)"
+                                        android:textSize="13sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/radioSombriamentoMuito"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="7dp"
+                                        android:text="Muito (7%)"
+                                        android:textSize="13sp" />
+
+                                </RadioGroup>
+                            </TableRow>
+
+                        </TableLayout>
+
+                        </TableRow>
+<!--
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Valor do Desconto(%):"
+                                android:layout_marginLeft="10dp"
+                                android:layout_span="2"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="20dp"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/edtValorDesconto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_span="2"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:digits="0,1,2,3,4,5"
+                                android:maxLength="1"
+                                android:textSize="16sp" />
+
+                        </TableRow>
+-->
+                    </TableLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/botao"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:onClick="visualisarProposta"
+                            android:text="Calcular"
+                            android:textColor="#FFF"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/botao"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentRight="true"
+                            android:onClick="irNovaProposta4"
+                            android:text="@string/btProximo"
+                            android:textColor="#FFF"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

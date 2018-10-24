@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/fundoapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="br.desenvolvedor.michelatz.aplcativosolar.Inicial"
+    tools:showIn="@layout/app_bar_inicial">
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:id="@+id/scrollView"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:text="HCC  SOLAR"
+                        android:layout_span="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="cursive"
+                        android:textColor="#FFF"
+                        android:gravity="center_horizontal"
+                        android:textSize="45sp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="210px"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="210dp"
+                        android:layout_span="2"
+                        app:srcCompat="@drawable/logo1"
+                        android:contentDescription="Logo HCC" />
+                </TableRow>
+            </TableLayout>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="300dp"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:layout_width="300px"
+                        android:layout_height="match_parent"
+                        android:text="Proposta"
+                        android:textSize="20sp"
+                        android:background="@drawable/botao"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:onClick="novaProposta"
+                        android:textColor="#fff"
+                        android:layout_span="2"
+                        android:textStyle="bold"
+                        android:id="@+id/opt1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal">
+
+
+                    <Button
+                        android:layout_width="300px"
+                        android:layout_height="match_parent"
+                        android:text="Lista Propostas"
+                        android:textSize="20sp"
+                        android:layout_span="2"
+                        android:background="@drawable/botao"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:onClick="ListarProposta"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:id="@+id/opt2" />
+
+<!--
+                    <Button
+                        android:layout_width="300px"
+                        android:layout_height="match_parent"
+                        android:text="Opção 3"
+                        android:textSize="20sp"
+                        android:background="@drawable/botao"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:id="@+id/opt3" />
+
+                    <Button
+                        android:layout_width="300px"
+                        android:layout_height="match_parent"
+                        android:text="Opção 4"
+                        android:textSize="20sp"
+                        android:background="@drawable/botao"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:id="@+id/opt4" />
+-->
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

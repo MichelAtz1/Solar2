@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">AplcativoSolar</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- HINTs -->
+    <string name="hintNumProposta">NÚMERO DA PROPOSTA</string>
+    <string name="hintCliente">CLIENTE</string>
+    <string name="hintCidade">CIDADE</string>
+
+    <!-- Button -->
+    <string name="btProximo">PRÓXIMO</string>
+
+
+    <!-- TextView -->
+    <string name="titulo">LEITURA DE CONSUMO MENSAL</string>
+    <string name="titulo2">CONSUMO MÊS</string>
+    <string name="titulo3">ÚLTIMA FATURA</string>
+    <string name="data">Data</string>
+    <string name="numProposta">Número da Proposta:</string>
+    <string name="nomeCliente">Nome do Cliente:</string>
+    <string name="cidade">Cidade:</string>
+    <string name="medicao">Medição:</string>
+    <string name="macroRegiao">Macro Região:</string>
+    <string name="txtMicroRegiao">Micro Região:</string>
+    <string name="txtJaneiro">Janeiro:</string>
+    <string name="txtFevereiro">Fevereiro:</string>
+    <string name="txtMarco">Março:</string>
+    <string name="txtAbril">Abril:</string>
+    <string name="txtMaio">Maio:</string>
+    <string name="txtJunho">Junho:</string>
+    <string name="txtJulho">Julho:</string>
+    <string name="txtAgosto">Agosto:</string>
+    <string name="txtSetembro">Setembro:</string>
+    <string name="txtOutubro">Outubro:</string>
+    <string name="txtNovembro">Novembro:</string>
+    <string name="txtDezembro">Dezembro:</string>
+    <string name="txtPreenchimento">Preenchimento:</string>
+    <string name="txtDescricaoAutomatico">Digite o valor que irá preencher todos os meses</string>
+    <string name="txtKWH">Kwh:</string>
+    <string name="txtValor">Valor:</string>
+    <string name="txtRepresentante">Representante Comercial:</string>
+    <string name="txtValorComissao">Valor da comissão(%):</string>
+
+    <!-- Radio Button -->
+    <string name="rdBahia">Bahia</string>
+    <string name="rdRS">Rio Grande do Sul</string>
+
+    <string name="radioSim">Sim</string>
+    <string name="radioNao">Não</string>
+
+    <string name="rdMicro1RS">Regiao 1 RS</string>
+    <string name="rdMicro2RS">Regiao 2 RS</string>
+    <string name="rdMicro3RS">Regiao 3 RS</string>
+    <string name="rdMicro4RS">Regiao 4 RS</string>
+    <string name="rdMicro5RS">Regiao 5 RS</string>
+    <string name="rdMicro6RS">Regiao 6 RS</string>
+    <string name="rdMicro1BA">Regiao 1 BA</string>
+    <string name="rdMicro2BA">Regiao 2 BA</string>
+    <string name="rdMicro3BA">Regiao 3 BA</string>
+    <string name="rdMicro4BA">Regiao 4 BA</string>
+
+    <string name="rdManual">Manual</string>
+    <string name="rdAutomatico">Automático</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_porposta1">Porposta1</string>
+    <string name="title_activity_proposta2">Proposta2</string>
+    <string name="title_activity_proposta3">Proposta3</string>
+    <string name="title_activity_visualiza_proposta">VisualizaProposta</string>
+    <string name="title_activity_proposta4">Proposta4</string>
+    <string name="title_activity_lista_propostas">ListaPropostas</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_visualiza_proposta_completa">VisualizaPropostaCompleta</string>
+</resources>
